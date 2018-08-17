@@ -1,0 +1,17 @@
+// HimnodeBolivia1raEstrofa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	cout<<"Bolivianos el hado propicio"<<endl;
+	cout<<"Coronó nuestros votos y anhelos"<<endl;
+	cout<<"Es ya libre, ya libre este pueblo"<<endl;
+	cout<<"Ya cesó su servil condicion"<<endl;
+	getch();		
+}
