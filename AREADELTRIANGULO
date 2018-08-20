@@ -1,3 +1,6 @@
+// Areadeltriangulo(JMV).cpp: define el punto de entrada de la aplicación de consola.
+//
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -6,13 +9,13 @@ using namespace std;
 
 void main()
 {
-       double b,h;
-       cout<<"Ingresa base"<<endl;
-        cin>>b;
-        cout<<"Ingresa altura"<<endl;
-        cin>>h;
-        double area;
-        area=b*h/2;
-      cout<<area;
-       getch()
+	float area, base, altura;
+	cout<<"Ingresa la base"<<endl;
+	cin>>base;
+	cout<<"Ingresa la altura"<<endl;
+	cin>>altura;
+	area=base*altura/2;
+	cout<<"El area de tu triangulo es...";
+	cout<<area<<endl;
+	system ("pause");
 }
