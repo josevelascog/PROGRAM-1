@@ -1,6 +1,9 @@
+#include "stdafx.h"
 #include <iostream>
-#include 
+#include "conio.h"
+
 using namespace std;
+
 int main()
 {
        double b,h;
