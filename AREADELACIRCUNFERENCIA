@@ -1,0 +1,25 @@
+// Areadelacircunferencia(JMV).cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float area, radio, pi;
+	cout<<"Ingresa el radio"<<endl;
+	cin>>radio;
+	pi=3.1416;
+	area=pi*radio*radio;
+	cout<<"El area de tu circunferencia es...";
+	cout<<area<<endl;
+	cout<<"."<<endl;
+	cout<<"."<<endl;
+	cout<<"."<<endl;
+	cout<<"."<<endl;
+	cout<<"Este programa fue hecho por Jose Miguel Velasco"<<endl;
+	system ("pause");
+}
