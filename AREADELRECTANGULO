@@ -1,0 +1,21 @@
+// Areadelrectangulo(JMV).cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float area, base, altura;
+	cout<<"Ingresa la base"<<endl;
+	cin>>base;
+	cout<<"Ingresa la altura"<<endl;
+	cin>>altura;
+	area=base*altura;
+	cout<<"El area de tu rectangulo es...";
+	cout<<area<<endl;
+	system ("pause");
+}
