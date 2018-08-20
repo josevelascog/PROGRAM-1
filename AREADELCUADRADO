@@ -1,0 +1,19 @@
+// Areadelcuadrado(JMV).cpp: define el punto de entrada de la aplicación de consola.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float area, lado;
+	cout<<"Ingresa el lado"<<endl;
+	cin>>lado;
+	area=lado*lado;
+	cout<<"El area de tu cuadrado es...";
+	cout<<area<<endl;
+	system ("pause");
+}
