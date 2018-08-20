@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()
+void main()
 {
        double b,h;
        cout<<"Ingresa base"<<endl;
@@ -14,5 +14,5 @@ int main()
         double area;
         area=b*h/2;
       cout<<area;
-      return 0;
+       getch()
 }
