@@ -15,3 +15,12 @@ void main()
 	cout<<"Ya cesó su servil condicion"<<endl;
 	getch();		
 }
+
+
+Algoritmo HimnodeBolivia
+	Escribir "Bolivianos el hado propicio"
+	Escribir "corono nuestros votos y anhelos"
+	Escribir "es ya libre, ya libre este suelo"
+	Escribir "ya ceso su servil condicion"
+FinAlgoritmo
+
