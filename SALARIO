@@ -1,0 +1,33 @@
+// Salario.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+
+{ double salariominimo, salariobruto, salarioneto;
+  salariominimo=2060;
+  cout<<"Ingrese el salario bruto: ";
+  cin>>salariobruto;
+  if (salariobruto>=salariominimo)
+	  while (salariobruto!=-999)
+	  {
+		  if (salariobruto>4*salariominimo)
+			  	  salarioneto=salariobruto-salariobruto*(0.121+0.13);
+		  else
+					salarioneto=salariobruto*0.87;
+		  cout<<"El salario despues de impuesto es: "<<salarioneto<<endl<<endl;
+		  cout<<"Ingrese el siguiente salario: ";
+		  cin>>salariobruto;
+	  }
+   else
+  {
+	  cout<<"*El salario esta por debajo del minimo, comuniquese con el Ministerio de Trabajo y denuncie*"<<endl;
+  }
+  getch();
+}
+	 
