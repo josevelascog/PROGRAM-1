@@ -1,0 +1,43 @@
+// Distancia entre dos puntos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+
+using namespace std;
+float ditancia(float, float, float, float);
+
+void main()
+
+{
+
+	float X1, X2, Y1, Y2, distancia;
+
+	cout<<"Introduza las coordenadas del primer punto"<<endl;
+	cin>>X1>>Y1;
+	cout<<"Introduzca las coordenadas del segundo punto"<<endl;
+	cin>>X2>>Y2;
+
+	distancia= sqrt((X2-X1)*(X2-X1)+(Y2-Y1)*(Y2-Y1));
+
+	cout<<"La distancia entre los puntos es:"<<endl;
+	cout<<distancia<<endl;
+
+	getch();
+}
+
+
+
+
+
+Proceso Distanciaentredospuntos
+	Escribir "Ingrese el primer punto"
+	Leer X1,Y1 
+	Escribir "Ingrese el segundo punto"
+	Leer X2,Y2 
+	D=RC((X2-X1)^2+(Y2-Y1)^2)
+	Escribir D
+
+FinProceso
