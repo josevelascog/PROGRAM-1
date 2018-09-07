@@ -1,0 +1,66 @@
+// promediodecincoenteros.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdio.h"
+
+using namespace std;
+
+
+void main()
+{
+	int a;
+	float p=0;
+		
+		cout<<"Ingrese el primer numero:"<<endl;
+		cin>>a;
+		p=p+a;
+		cout<<"Ingrese el segundo numero:"<<endl;
+		cin>>a;
+		p=p+a;
+		cout<<"Ingrese el tercer numero:"<<endl;
+		cin>>a;
+		p=p+a;
+		cout<<"Ingrese el cuarto numero:"<<endl;
+		cin>>a;
+		p=p+a;
+		cout<<"Ingrese el quinto numero:"<<endl;
+		cin>>a;
+		p=p+a;
+
+		p=p/5;
+			cout<<"El promedio es:"<<p<<endl;
+
+		getch();
+	
+		
+}
+
+
+
+
+
+Proceso promedio
+	Escribir "Ingrese el primer numero"
+	p=0 
+	Leer a
+	p<-p+a
+	Escribir "Ingrese el segundo numero"
+	Leer a
+	p<-p+a
+	Escribir "Ingrese el tercer numero"
+	Leer a
+	p<-p+a
+	Escribir "Ingrese el cuarto numero"
+	Leer a
+	p<-p+a
+	Escribir "Ingrese el quinto numero"
+	Leer a
+	p<-p+a
+	p<-p/5
+	Escribir "El promedio es:" p 
+	
+
+FinProceso
