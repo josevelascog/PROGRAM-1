@@ -1,0 +1,27 @@
+//SumaDeLosNPrimerosNumerosPares//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main ()
+{
+
+	int suma, numpar, n, contador;
+	cout<<"Ingrese la cantidad de numeros pares que desea sumar: ";
+	cin>>n;
+	suma=0;
+	numpar=0;
+	contador=0;
+	while (contador<n)
+	{
+		numpar=numpar+2;
+		suma=numpar+suma;
+		contador=contador+1;
+	}
+	
+	cout<<"La suma es: "<<suma<<endl<<endl<<endl;
+	main();
+}
+		
