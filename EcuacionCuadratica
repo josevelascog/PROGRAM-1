@@ -1,0 +1,41 @@
+// EcuacionCuadratica.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	float a, b, c, x1, x2, opcion;
+	do
+	{
+	cout<<"Ingrese a: ";
+	cin>>a;
+	cout<<"Ingrese b: ";
+	cin>>b;
+	cout<<"Ingrese c: ";
+	cin>>c;
+	
+	if ((b*b)-(4*a*c)==0)
+		cout<<"Su ecuacion tiene una unica solucion real y es: "<<endl;
+	if ((b*b)-(4*a*c)>0)
+		cout<<"Su ecuacion tiene dos soluciones reales y son: "<<endl;
+	if ((b*b)-(4*a*c)<0)
+		cout<<"Su ecuacion NO tiene solucion real"<<endl;
+
+	if ((b*b)-(4*a*c)>=0)
+	{
+		x1=(-1*(b)+sqrt((b*b)-(4*a*c)))/(2*a);
+	    cout<<"x1= "<<x1<<endl;
+	    x2=(-1*(b)-sqrt((b*b)-(4*a*c)))/(2*a);
+	    cout<<"x2= "<<x2<<endl;
+	}
+	cout<<"Si quiere calcular otra ecuacion presione cualquier tecla, sino presione 0"<<endl;
+	cin>>opcion;
+	}
+	while (opcion!=0);
+}
