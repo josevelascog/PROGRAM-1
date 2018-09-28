@@ -1,0 +1,44 @@
+// CuadraticaReferencia.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+// Prototipos
+float discriminante (float a1, float b1, float c1);
+void reales (float a, float b, float c, float &x1, float &x2); 
+// & son variables por referencia que cambian de valor por la funcion porque son punteros a las variables que lo llaman
+
+void main()
+{
+	float a, b, c, valor1, valor2, d;
+	cout<<"Ingrese los valores de a, b y c"<<endl;
+	cin>>a>>b>>c;
+	d=discriminante(a,b,c);
+	if (d>0)
+	{
+		reales(a,b,c,valor1,valor2);
+		cout<<"Raiz 1: "<<valor1<<endl;
+		cout<<"Raiz 2: "<<valor2;
+	}
+	else
+		cout<<"No son reales"<<endl;
+	getch();
+}
+
+float discriminante (float a1, float b1, float c1)
+{
+	float d;
+	d=(b1*b1)-(4*a1*c1);
+	return d; // se debe devolver porque se ha declarado con float
+}
+
+void reales (float a, float b, float c, float &x1, float &x2)
+{
+	x1=(-b+sqrt((b*b)-(4*a*c)))/2*a;
+	x2=(-b-sqrt((b*b)-(4*a*c)))/2*a;
+}
