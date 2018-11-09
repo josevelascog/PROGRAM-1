@@ -1,0 +1,44 @@
+// ContarPalabrasVocalesConsonantes.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "string"
+
+using namespace std;
+void contar(string frase);
+#define MAX 100
+
+void main()
+{
+	string frase;
+	cout<<"Por favor, ingrese la frase a ser analizada: "<<endl;
+	getline(cin,frase);
+	contar(frase);
+	getch();
+}
+
+void contar(string frase)
+{
+	int tam=frase.length();
+	int vocal=0, consonante=0, espacio=0;
+	for (int i=0; i<=tam; i++)
+	{
+		if (frase[i]=='a'||frase[i]=='e'||frase[i]=='i'||frase[i]=='o'||frase[i]=='u')
+			vocal++;
+		else {
+			if (frase[i]!=' ')
+				consonante++;
+			else 
+				espacio++;
+			}
+	}
+cout << "Su frase tiene: "<<vocal<<"vocales"<<endl;
+cout << "Su frase tiene: "<<consonante<<"consonantes"<<endl;
+cout << "Su frase tiene: "<<espacio+1<<"palabras"<<endl;
+
+}
+
+
+
