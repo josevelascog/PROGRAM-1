@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float fac (float n);
+
+void main ()
+{
+	int n,resp;
+	cout << "Ingrese el numero maximo de la serie: ";
+	cin >> n;
+	if (n>0)
+	{
+		resp= fac(n);
+		cout << "El resultado es: " << resp<<endl;
+	}else{
+		if (n==0)
+			cout << "La respueta es 1"<<endl;
+		else 
+			cout << "No existe factorial de un numero negativo"<<endl;
+	}
+		getch ();
+	
+}
+
+float fac (float n)
+{
+	float p=1;
+	for (int i=1;i<=n;i++)
+		p=p*i;
+	return p;
+}
