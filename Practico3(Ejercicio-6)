@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float potencia (float n, float x);
+
+void main ()
+{
+	int n,x,resp;
+	cout << "Ingrese el numero maximo de la serie: ";
+	cin >> n;
+	cout << "Ingrese la base: ";
+	cin >> x;
+	resp= potencia(n,x);
+	cout << "El resultado es: " << resp;
+	getch ();
+}
+float potencia (float n, float x)
+{
+	float p=0;
+	for (int i=1; i<=n; i++)
+		p=p+pow(x,i);
+	return p;
+}
