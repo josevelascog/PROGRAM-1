@@ -25,7 +25,7 @@ void main()
 		}
 		else cout << "No puede votar";
 	}
-	else cout << "No puede votar";
+	else cout<<"No puede votar";
 	cout << "¿Desea continuar?" << endl;
 	cin >> n;
 	}
