@@ -1,0 +1,66 @@
+#include "stdafx.h"
+
+#include <iostream>
+
+#include "conio.h"
+
+#include "string"
+
+
+
+using namespace std;
+
+
+
+void main(){
+
+
+	string nombre;
+
+	int opcion;
+
+	cout << "             BIENVENIDO A MEMOTEC         "<<endl<<endl;
+
+	cout << "Por favor, ingrese su nombre de usuario: ";
+
+	getline(cin,nombre);
+
+	cout << "Buenos dias Sr./Sra. "<<nombre<<"..."<<endl<<endl;
+
+	cout << "Si quiere agregar un nuevo evento, presione 1"<<endl;
+
+	cout << "Si quiere visualizar los eventos actuales, presione 2"<<endl;
+
+	cout << "Si quiere calcular los salarios para sus trabajadores, presione 3"<<endl;
+
+	cout << "Si quiere calcular los impuestos de la empresa, presione 4"<<endl<<endl;
+
+	cout << "Ingrese la opcion deseada..."<<endl<<endl;
+
+
+	do{
+
+	cin >> opcion;
+
+	
+
+	switch (opcion){
+
+		case 1: cout<< "0"; break; 
+
+		case 2: cout<< "0"; break; 
+
+		case 3: cout<< "0"; break; 
+
+		case 4: cout<< "0"; break; 
+
+			system("cls");
+
+	}
+
+
+	}while(opcion!=0);
+
+		getch();
+
+}
