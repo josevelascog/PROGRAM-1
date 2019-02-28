@@ -1,0 +1,69 @@
+	void escribir()
+	{
+		cout<<"El dato es: "<<enteros;
+	}
+
+	int contar_digitos()
+	{
+		int contador=0;
+		naturales digitos;
+		digitos.set_enteros(get_enteros());
+
+		while (digitos.get_enteros()>0)
+		{
+			digitos.set_enteros(digitos.get_enteros()/10);
+			contador++;
+		}
+	return contador;
+	}
+
+	bool verificar_numero(naturales x)
+	{
+		naturales aux, aux2;
+		aux.enteros=enteros;
+		aux2=aux;
+		int residuo;
+		int contar=aux.contar_digitos()-1;
+		while((aux.enteros>0)&&(aux.enteros!=x.enteros))
+		{
+			residuo=powf(10,contar);
+			aux.enteros=aux.enteros/residuo;
+			aux2.enteros=aux2.enteros%residuo;
+			contar=contar-1;
+			if(aux.enteros==x.enteros)
+			{
+				return true;
+			}
+		}
+	}
+
+};
+
+
+
+
+
+
+
+
+
+// BuscarEntero.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "naturales.h"
+
+using namespace std;
+
+void main()
+{
+	naturales n;
+	n.leer();
+	n.set_enteros(n.get_enteros());
+	n.escribir();
+
+	getch();
+}
+
